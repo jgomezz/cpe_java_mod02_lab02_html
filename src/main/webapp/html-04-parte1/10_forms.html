@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1>Registro de Usuario</h1>
+
+	
+	<form action="" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<p>
+				<label for="nombres">Nombres</label> 
+				
+				<input type="text" id="nombres"	name="nombres" size="50" 
+				       maxlength="100"	placeholder="Ingrese sus nombres" 
+				       autofocus required />
+			</p>
+			<p>
+				<label for="apellidos">Apellidos</label> 
+				<input type="text"
+					id="apellidos" name="apellidos" size="50" maxlength="100"
+					placeholder="Ingrese sus apellidos" value="" required />
+			</p>
+			<p>
+				<label for="fnacimiento">Fecha de nacimiento</label> 
+				<input type="date" id="fnacimiento" name="fnacimiento" required />
+			</p>
+			<p>
+				<label for="distrito">Distrito</label> 
+				
+				<select id="distrito" name="distrito" required>
+				
+					<option value="" selected="" disabled="">Seleccione un valor</option>
+					<option value="01">Lima</option>
+					<option value="02">Ate</option>
+					<option value="03" disabled="">San Isidro</option>
+					<option value="04">Lince</option>
+				
+				</select>
+			</p>
+			<p>
+				<label>Sexo</label> 
+				<label><input type="radio" name="sexo" value="M" required /> Masculino</label> 
+				<label><input type="radio" name="sexo" value="F" required /> Femenino</label>
+			</p>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Datos de la cuenta</legend>
+			<p>
+				<label for="correo">Correo</label> 
+				<input type="email" id="correo"
+					name="correo" maxlength="100" autocomplete="off" required />
+			</p>
+			<p>
+				<label for="clave">Clave</label>
+				<!--
+https://www.w3schools.com/tags/att_input_pattern.asp -->
+				<input type="password" id="clave" name="clave" required
+					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+					title="8 caracteres mínimo, mayúsculas y minúsculas" />
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos del perfil</legend>
+			<p>
+				<label for="descripcion">Descríbete</label><br />
+				<textarea rows="4" cols="60" id="descripcion" name="descripcion"></textarea>
+			</p>
+			<p>
+				<label for="foto">Foto</label> 
+				<input type="file" id="foto" name="foto" />
+			</p>
+			<p>
+				<label>
+				<input type="checkbox" name="acuerdos" value="Si" required /> Acepta los acuerdos ...</label>
+			</p>
+		</fieldset>
+		<p>
+			<input type="submit" value="Registrar" /> 
+			<input type="reset"  value="Limpiar" />
+		</p>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<!--  
+http://localhost:8080/mod02-lab02/html-01/forms_ejemplo.html   ?  nom=Jaime & ape_pat=Gomez & ape_mat=Gomez
+-->
+	<form action="" method="get">
+
+			<p>
+				<label> Nombre  </label>
+				<input type="text" name="nom" /> 
+				</p>
+			<p>
+				<label> Apellido P.  </label>
+				<input type="text" name="ape_pat"/> 
+				</p>
+			<p>
+				<label> Apellido M.  </label>
+				<input type="text" name="ape_mat"/> 
+			</p>
+		<p>
+		<input type="submit" value="Aceptar"/>
+		<input type="reset" value="Aceptar"/>
+		</p>
+	</form>
+
+<!--  
+https://www.google.com/search   ?  q =Java
+-->
+	<form action="https://www.google.com/search" method="get" >
+		<p>
+			<label> Buscar  </label>
+			<input type="text" name="q" /> 
+			</p>
+		<p>
+		<input type="submit" value="Buscar"/>
+		<input type="reset" value="Aceptar"/>
+		</p>
+	</form>
+	
+	
+	<form action="enlaces.html" method="get">
+		<p>
+			<label> Página de enlace  </label>
+		<p>
+		<input type="submit" value="Buscar"/>
+		<input type="reset" value="Aceptar"/>
+		</p>
+	</form>
+
+</body>
+</html>

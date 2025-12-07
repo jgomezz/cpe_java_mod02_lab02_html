@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<!-- Tabla simple -->
+	
+	<table border="1">
+		<tr>
+			<td>Fila 1 - Columna 1</td>
+			<td>Fila 1 - Columna 2</td>
+			<td>Fila 1 - Columna 3</td>
+			<td>Fila 1 - Columna 4</td>
+			<td>Fila 1 - Columna 5</td>
+		</tr>
+		<tr>
+			<td>Fila 2 - Columna 1</td>
+			<td>Fila 2 - Columna 2</td>
+			<td>Fila 2 - Columna 3</td>
+			<td>Fila 2 - Columna 4</td>
+			<td>Fila 2 - Columna 5</td>
+		</tr>
+		<tr>
+			<td>Fila 3 - Columna 1</td>
+			<td>Fila 3 - Columna 2</td>
+			<td>Fila 3 - Columna 3</td>
+			<td>Fila 3 - Columna 4</td>
+			<td>Fila 3 - Columna 5</td>
+		</tr>
+	</table>
+
+
+
+	<hr />
+	<!-- Combinando celdas -->
+	<table border="1" width="640">
+		<tr>
+			<td rowspan="3" valign="top">Fila 1, 2, 3 - Columna 1</td>
+			<td colspan="3" align="center">Fila 1 - Columna 2, 3, 4</td>
+			<!--<td>Fila 1 - Columna 3</td>-->
+			<!--<td>Fila 1 - Columna 4</td>-->
+			<td>Fila 1 - Columna 5</td>
+		</tr>
+		<tr>
+			<!--<td>Fila 2 - Columna 1</td>-->
+			<td>Fila 2 - Columna 2</td>
+			<td>Fila 2 - Columna 3</td>
+			<td colspan="2" rowspan="2">Fila 2, 3 - Columna 4, 5</td>
+			<!--<td>Fila 2 - Columna 5</td>-->
+		</tr>
+		<tr>
+			<!--<td>Fila 3 - Columna 1</td>-->
+			<td>Fila 3 - Columna 2</td>
+			<td>Fila 3 - Columna 3</td>
+			<!--<td>Fila 3 - Columna 4</td>-->
+			<!--<td>Fila 3 - Columna 5</td>-->
+		</tr>
+	</table>
+
+	<hr />
+	<!-- Tabla avanzada -->
+	<table border="1" cellspacing="0" cellpadding="3" width="50%">
+		<caption>Lista de Usuarios</caption>
+		<colgroup>
+			<col width="60" />
+			<col width="500" />
+			<col width="140" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Codigo</th>
+				<th>Nombres</th>
+				<th>Correo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">100</td>
+				<td>Jorge Flores</td>
+				<td><a href="mailto:jflores@gmail.com">jflores@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td align="center">200</td>
+				<td>Mauricio Galvez</td>
+				<td><a href="mailto:mgalvez@gmail.com">mgalvez@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td align="center">300</td>
+				<td>Luis Maza</td>
+				<td><a href="mailto:lmaza@gmail.com">lmaza@gmail.com</a></td>
+			</tr>
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<td colspan="3" align="right">3 Registros encontrados</td>
+			</tr>
+		</tfoot>
+		
+	</table>
+	
+	
+</body>
+</html>
