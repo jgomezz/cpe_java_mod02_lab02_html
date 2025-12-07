@@ -1,0 +1,218 @@
+@charset "ISO-8859-1";
+	body{
+	    margin: 0px;    /* Eliminamos los márgenes principales de la página */
+	    font-family: 'Roboto', sans-serif;  /* Fuente Roboto de Google Fonts */
+	}
+	
+	header{
+	    border-bottom: 2px solid black;
+	    padding: 10px 20px; /* Relleno superiro/inferior y derecho/izquierdo */ 
+	    
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,1976d2+80 */
+	    background: #ffffff; /* Old browsers */
+	    background: -moz-linear-gradient(left, #ffffff 50%, #1976d2 80%); /* FF3.6-15 */
+	    background: -webkit-linear-gradient(left, #ffffff 50%,#1976d2 80%); /* Chrome10-25,Safari5.1-6 */
+	    background: linear-gradient(to right, #ffffff 50%,#1976d2 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1976d2',GradientType=1 ); /* IE6-9 */
+	    
+	    color: white; /* Color de texto*/
+	    
+	    overflow: hidden;   /* Corrige la altura con el menu flotante (moviles) */
+	}
+	/* Convertimos una lista en menu */
+	header > ul{
+	    float: right;   /* Flotar el mini menu a la derecha */
+	    margin: 0;  /* Elimina el márgen por default */
+	    padding: 0; /* Eliminamos el relleno por default */
+	    list-style-type: none;  /* Elimina las viñetas por default */
+	}
+	header > ul > li{
+	    float: left;    /* Flota las opciones uno al lado del otro */
+	}
+	header > ul > li > a{
+	    color: white;   /* Color de texto*/
+	    text-decoration: none;  /* Elimina el subrayado por default */
+	    padding: 10px;  /* Añade relleno */
+	    font-size: 14px;    /* Tamaño de fuente */
+	    display: inline-block; /* Convierte el enlace en caja (corrige los altos) */
+	}
+	header > ul > li > a:hover{ /* hover: se activa al poner el cursor encima */
+	    text-decoration: underline; /* Mostrar subrayado */
+	    color: gold;    /* Cambiar a color de texto dorado */
+	}
+	
+	nav{
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+	    background: #45484d; /* Old browsers */
+	    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6-15 */
+	    background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	    background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	    
+	    box-shadow: 0px 2px 2px 0px #45484d;    /* Sombra de caja (horizontal vertical desenfoque intensidad color) */
+	}
+	nav > ul{
+	    margin: 0;  /* Elimina el márgen por default */
+	    padding: 0; /* Elimina el relleno por default */
+	    list-style-type: none;  /* Elimina las viñetas por default */
+	    overflow: hidden;   /* Corrige el contenido flotante (float: left) */
+	}
+	nav > ul > li{
+	    float: left;      /* Flota las opciones uno al lado del otro */  
+	}
+	nav > ul > li > a{
+	    color: white;   /* Color de texto*/
+	    text-decoration: none;  /* Elimina el subrayado por default */
+	    padding: 10px;  /* Añade relleno */
+	    font-size: 14px;    /* Tamaño de fuente */
+	    display: inline-block; /* Convierte el enlace en caja (corrige los altos) */
+	}
+	nav > ul > li > a:hover{ /* hover: se activa al poner el cursor encima */
+	    text-decoration: underline; /* Mostrar subrayado */
+	    color: gold;    /* Cambiar a color de texto dorado */
+	}
+	
+	section{
+	    padding: 20px;  /* Relleno a 20px para las secciones */
+	}
+	
+	.section-welcome article{   /* Aplica a la caja article de la sección welcome */
+	    padding: 20px;
+	
+	    border: 1px solid #C1C1C1;  /* Bordes */
+	    border-radius: 10px;    /* Esquinas redondeadas */
+	    box-shadow: 0px 0px 5px 1px #5c5c5c;    /* Añadimos sombras alrededor */
+	
+	    /* Imagen de fondo sin repetición y centrado */
+	    /*background-image: url(../img/poster.jpg);
+	    background-repeat: no-repeat;
+	    background-position: center;*/
+	
+	    /* Imagen de fondo de portada */
+	    background-image: url(../img/cover-learning.jpg);
+	    background-size: cover; /* Ajusta la imagen a todo el contenedor */
+	}
+	.section-welcome h1{
+	    margin: 20px;   /* Márgen */
+	    color: white;  /* Color de texto */
+	    font-family: 'Great Vibes', cursive;    /* Nueva fuente de letra de Google */
+	    font-size: 48px;    /* Tamaño d efuente */
+	    text-align: center; /* Alineamiento centrado */
+	}
+	.section-welcome p{
+	    margin-left: 20px;  /* Márgen izquierdo */
+	    margin-right: 20px; /* Márgen derecho */
+	    color: white;   /* Color de texto */
+	    text-align: justify; /* Alineamiento justificado */
+	}
+	
+	.custom-button{
+	    border: 1px solid grey; /* Borde gris */
+	    padding: 8px 18px;  /* Rellenos */
+	
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+	    background: #f5f6f6; /* Old browsers */
+	    background: -moz-linear-gradient(top,  #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+	    background: -webkit-linear-gradient(top,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+	    background: linear-gradient(to bottom,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+	
+	    border-radius: 6px; /* Bordes redondeados */
+	    background-clip: padding-box;   /* Corrige los bordes sobre el fondo */
+	    
+	    color: #45484d; /* Color de texto */
+	    text-decoration: none;  /* Eliminar el subrayado */
+	
+	    display: inline-block; /* Convertir a caja, 'block': ocupa todo el ancho */
+	}
+	.center{
+	    text-align: center !important;  /* Predomina el centrado */
+	}
+	.custom-button:hover{
+	    color: grey;    /* Cambiar el color al posicionar el cursor */
+	}
+	
+	.section-presenter article{
+	    overflow: hidden;   /* Corrige la altura con elementos flotantes */
+	}
+	
+	.section-presenter article video{
+	    float: right;   /* Flota el video hacia la derecha */
+	    margin-left: 20px; /* Margen izquierdo */
+	}
+	.section-presenter article h1{
+	    margin-top: 0px;    /* Margen superior */
+	    padding-bottom: 5px;    /* Relleno inferior */
+	    border-bottom: 1px solid grey;  /* Borde inferior */
+	}
+	.section-presenter article p{
+	    color: #45484d; /* Color de texto */
+	    text-align: justify; /* Alineamiento justificado */
+	}
+	
+	.section-modality{
+	    padding: 100px 30px;    /* Rellenos verticales y horizontales */
+	    background-image: url(../img/cover-learning.jpg);  /* Imagen de fondo */ 
+	    background-size: cover; /* La imagen de fondo ocupa toda la caja */
+	    background-attachment: fixed;   /* Mantiene fija la imagen de fondo */
+	}
+	.section-modality article *{    /* '*' Aplica para todos los elementos */
+	    color: white;
+	    text-align: center;
+	}
+	
+	.section-trainers article{
+	    display: flex;  /* Diseño de cajas flexibles (flexbox) */
+	    /* Referencia: https://www.w3schools.com/css/css3_flexbox.asp */
+	    /* flex-flow: wrap; */
+	    /* justify-content: center; */
+	}
+	.section-trainers article > div{
+	    border: 1px solid grey; /* Borde gris */
+	    padding: 20px;  /* Relleno de caja */
+	    margin-left: 20px;  /* Margen entre cajas*/
+	    text-align: center; /* Contenido centrado */
+	    border-radius: 20px;    /* Borde redondeado */
+	}
+	.section-trainers article > div:first-child{
+	    margin-left: 0px;   /* Corrige solo a la primera caja */
+	}
+	.section-trainers article > div img{
+	    border-radius: 50%; /* Forma circular */
+	}
+	
+	footer{
+	    background-color: #45484d;  /* Color de fondo */
+	    padding: 20px;
+	    text-align: center; /* Alineamiento del texto */
+	    
+	    color: white;
+	    font-size: 12px;
+	}
+	footer a{
+	    color: white;
+	    text-decoration: none;
+	}
+	
+	/* Media Queries: https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+	@media only screen and (max-width: 768px) {
+	/* Responsive Web Design, Aplica solo si el ancho es menor a 768px */
+	    .section-welcome h1{
+	        font-size: 32px;
+	    }
+	    
+	    .section-presenter article video{
+	        margin-bottom: 20px; /* Margen inferior */
+	    }
+	    
+	    .section-trainers article{
+	        flex-flow: wrap;
+	    }
+	    .section-trainers article > div{
+	        margin-left: 0;
+	        margin-top: 20px;
+	    }
+	    .section-trainers article > div:first-child{
+	        margin-top: 0px;
+	    }
+	}
